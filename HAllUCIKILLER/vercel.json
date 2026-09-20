@@ -1,47 +1,44 @@
 {
-  "version": 2,
-  "builds": [
+  "rewrites": [
     {
-      "src": "api/index.py",
-      "use": "@vercel/python"
-    }
-  ],
-  "routes": [
-    {
-      "src": "/api/(.*)",
-      "dest": "api/index.py"
+      "source": "/api/(.*)",
+      "destination": "/api/index.py"
     },
     {
-      "src": "/css/(.*)",
-      "dest": "web/css/$1"
+      "source": "/css/(.*)",
+      "destination": "/web/css/$1"
     },
     {
-      "src": "/js/(.*)",
-      "dest": "web/js/$1"
+      "source": "/js/(.*)",
+      "destination": "/web/js/$1"
     },
     {
-      "src": "/favicon.svg",
-      "dest": "web/favicon.svg"
+      "source": "/favicon.svg",
+      "destination": "/web/favicon.svg"
     },
     {
-      "src": "/favicon.ico",
-      "dest": "web/favicon.svg"
+      "source": "/favicon.ico",
+      "destination": "/web/favicon.svg"
     },
     {
-      "src": "/robots.txt",
-      "dest": "web/robots.txt"
+      "source": "/robots.txt",
+      "destination": "/web/robots.txt"
     },
     {
-      "src": "/sitemap.xml",
-      "dest": "web/sitemap.xml"
+      "source": "/sitemap.xml",
+      "destination": "/web/sitemap.xml"
     },
     {
-      "src": "/site.webmanifest",
-      "dest": "web/site.webmanifest"
+      "source": "/site.webmanifest",
+      "destination": "/web/site.webmanifest"
     },
     {
-      "src": "/(.*)",
-      "dest": "api/index.py"
+      "source": "/",
+      "destination": "/web/index.html"
+    },
+    {
+      "source": "/dashboard",
+      "destination": "/web/index.html"
     }
   ]
 }
