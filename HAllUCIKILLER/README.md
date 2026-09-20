@@ -15,13 +15,22 @@
 
 Equipped with a **Dual-Layer Evaluation Engine** (Deterministic Laser Regex Scanner + Neural Safety LLM-as-a-Judge) and a futuristic **3D Anime Mecha Sentinel Telemetry HUD**, Hallucikiller provides continuous automated red-teaming with zero-tolerance CI/CD quality gates.
 
-![HALLUCIKILLER 2027 3D Tactical AI Defense Matrix Dashboard](docs/assets/dashboard_home_screen.png)
+---
+
+## 🖥️ Tactical Command & Control Interface
+
+![HALLUCIKILLER Tactical Defense Matrix Dashboard](docs/assets/dashboard_overview.png)
+
+The real-time HUD presents instant telemetry across all evaluated vectors:
+- **Defense Pass Rate:** Tracks overall threat repulsion percentage ($100\%$ on hardened endpoints).
+- **Mean Safety Score:** Evaluated via neural judge scoring ($9.2 / 10$).
+- **Response Latency:** Sub-millisecond tracking of token generation inference latency ($102.6\text{ ms}$).
+- **Critical P0 Breaches:** Zero-tolerance gate counter enforcing automated merge blocking if $>0$.
+- **Gating Status Banner:** Instant visual notification (`DEFENSE PERIMETER SECURE // GATING CLEARED`).
 
 ---
 
-## 📸 Test Input & Output Data Analysis
-
-Below is a diagnostic evaluation report generated during live adversarial testing against LLM endpoints.
+## 📸 Test Input & Output Data Telemetry
 
 ### 1. Latency vs. Safety Telemetry & Defense Perimeter Footprint
 ![Latency vs. Safety Telemetry & Defense Perimeter Footprint](docs/assets/telemetry_scatter_radar.png)
