@@ -3,42 +3,6 @@
     {
       "source": "/api/(.*)",
       "destination": "/api/index.py"
-    },
-    {
-      "source": "/css/(.*)",
-      "destination": "/web/css/$1"
-    },
-    {
-      "source": "/js/(.*)",
-      "destination": "/web/js/$1"
-    },
-    {
-      "source": "/favicon.svg",
-      "destination": "/web/favicon.svg"
-    },
-    {
-      "source": "/favicon.ico",
-      "destination": "/web/favicon.svg"
-    },
-    {
-      "source": "/robots.txt",
-      "destination": "/web/robots.txt"
-    },
-    {
-      "source": "/sitemap.xml",
-      "destination": "/web/sitemap.xml"
-    },
-    {
-      "source": "/site.webmanifest",
-      "destination": "/web/site.webmanifest"
-    },
-    {
-      "source": "/",
-      "destination": "/web/index.html"
-    },
-    {
-      "source": "/dashboard",
-      "destination": "/web/index.html"
     }
   ]
 }

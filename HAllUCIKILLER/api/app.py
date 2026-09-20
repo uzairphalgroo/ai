@@ -51,11 +51,17 @@ async def add_security_headers(request: Request, call_next):
 app.include_router(router)
 
 # Mount 2027 Futuristic Web Frontend
-WEB_DIR = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "web")
+ROOT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+WEB_DIR = os.path.join(ROOT_DIR, "public") if os.path.exists(os.path.join(ROOT_DIR, "public")) else os.path.join(ROOT_DIR, "web")
+
 if os.path.exists(WEB_DIR):
+    css_dir = os.path.join(WEB_DIR, "css")
+    js_dir = os.path.join(WEB_DIR, "js")
+    if os.path.exists(css_dir):
+        app.mount("/css", StaticFiles(directory=css_dir), name="css")
+    if os.path.exists(js_dir):
+        app.mount("/js", StaticFiles(directory=js_dir), name="js")
     app.mount("/static", StaticFiles(directory=WEB_DIR), name="static")
-    app.mount("/css", StaticFiles(directory=os.path.join(WEB_DIR, "css")), name="css")
-    app.mount("/js", StaticFiles(directory=os.path.join(WEB_DIR, "js")), name="js")
 
 @app.get("/")
 async def root():
