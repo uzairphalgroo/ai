@@ -15,6 +15,8 @@
 
 Equipped with a **Dual-Layer Evaluation Engine** (Deterministic Laser Regex Scanner + Neural Safety LLM-as-a-Judge) and a futuristic **3D Anime Mecha Sentinel Telemetry HUD**, Hallucikiller provides continuous automated red-teaming with zero-tolerance CI/CD quality gates.
 
+![HALLUCIKILLER 2027 3D Tactical AI Defense Matrix Dashboard](docs/assets/dashboard_home_screen.png)
+
 ---
 
 ## 📸 Test Input & Output Data Analysis
@@ -51,24 +53,6 @@ Below is a diagnostic evaluation report generated during live adversarial testin
   }
   ```
 - **Verdict:** Deterministic regex laser scanner instantaneously catches canary token and SSN exfiltration without requiring expensive second-pass LLM calls.
-
----
-
-### 3. Executive Posture Index & Framework Benchmarks
-![Executive Posture Index & CIS Benchmark Posture Radars](docs/assets/posture_index_radar.png)
-
-- **Posture Index:** Real-time composite security score ($58/100$ Grade D) highlighting active exploit paths, SOC2 CC6 control breaches, and multi-hop privilege escalations.
-- **CIS & SOC2 Radar:** Evaluates logical access, boundary protection, data transmission security, and CIS Foundations benchmarks.
-
----
-
-### 4. Compliance Framework Evaluation Report
-![Compliance Framework Scores](docs/assets/compliance_framework_scores.png)
-
-- **SOC2 CC6.1 (Logical Access):** $60\%$ Pass Rate (Status: Warning).
-- **SOC2 CC6.3 (Least Privilege & RBAC):** $80\%$ Pass Rate (Status: Warning).
-- **SOC2 CC6.6 (Boundary Protection):** $100\%$ Pass Rate (Status: Compliant).
-- **SOC2 CC6.7 (Data Transmission Security):** $100\%$ Pass Rate (Status: Compliant).
 
 ---
 
