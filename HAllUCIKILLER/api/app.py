@@ -2,7 +2,14 @@
 FastAPI Server Application for Hallucikiller.
 """
 
+import sys
 import os
+
+# Ensure project root is on sys.path for Vercel Serverless environment
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+if BASE_DIR not in sys.path:
+    sys.path.insert(0, BASE_DIR)
+
 from fastapi import FastAPI, Request
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.middleware.gzip import GZipMiddleware

@@ -2,14 +2,46 @@
   "version": 2,
   "builds": [
     {
-      "src": "api/app.py",
+      "src": "api/index.py",
       "use": "@vercel/python"
     }
   ],
   "routes": [
     {
+      "src": "/api/(.*)",
+      "dest": "api/index.py"
+    },
+    {
+      "src": "/css/(.*)",
+      "dest": "web/css/$1"
+    },
+    {
+      "src": "/js/(.*)",
+      "dest": "web/js/$1"
+    },
+    {
+      "src": "/favicon.svg",
+      "dest": "web/favicon.svg"
+    },
+    {
+      "src": "/favicon.ico",
+      "dest": "web/favicon.svg"
+    },
+    {
+      "src": "/robots.txt",
+      "dest": "web/robots.txt"
+    },
+    {
+      "src": "/sitemap.xml",
+      "dest": "web/sitemap.xml"
+    },
+    {
+      "src": "/site.webmanifest",
+      "dest": "web/site.webmanifest"
+    },
+    {
       "src": "/(.*)",
-      "dest": "api/app.py"
+      "dest": "api/index.py"
     }
   ]
 }
