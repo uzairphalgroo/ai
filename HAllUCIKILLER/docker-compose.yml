@@ -1,0 +1,23 @@
+version: '3.8'
+
+services:
+  hallucikiller:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: hallucikiller-matrix
+    restart: unless-stopped
+    ports:
+      - "8000:8000"
+    environment:
+      - HALLUCIKILLER_API_HOST=0.0.0.0
+      - HALLUCIKILLER_API_PORT=8000
+      - OPENAI_API_KEY=${OPENAI_API_KEY:-}
+      - ANTHROPIC_API_KEY=${ANTHROPIC_API_KEY:-}
+      - GEMINI_API_KEY=${GEMINI_API_KEY:-}
+      - DEEPSEEK_API_KEY=${DEEPSEEK_API_KEY:-}
+      - OLLAMA_BASE_URL=${OLLAMA_BASE_URL:-http://host.docker.internal:11434}
+    env_file:
+      - .env
+    extra_hosts:
+      - "host.docker.internal:host-gateway"

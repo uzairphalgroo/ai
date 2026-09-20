@@ -1,0 +1,29 @@
+# Environment variables and secrets
+.env
+.env.local
+.env.*.local
+*.env
+
+# Python bytecode & cache
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Virtual environments
+venv/
+.venv/
+env/
+ENV/
+
+# Vercel & Node
+.vercel
+node_modules/
+.DS_Store
+Thumbs.db
+
+# Output artifacts
+*.sarif
+hallucikiller_*.json

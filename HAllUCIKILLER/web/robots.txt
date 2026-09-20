@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /api/eval/scan-text
+Disallow: /api/eval/run
+
+Sitemap: https://hallucikiller.ai/sitemap.xml

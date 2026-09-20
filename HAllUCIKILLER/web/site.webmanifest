@@ -1,0 +1,17 @@
+{
+  "name": "HALLUCIKILLER // AI Defense Matrix",
+  "short_name": "HALLUCIKILLER",
+  "description": "Tactical LLM Red-Teaming, Canary Leak Scanner, and Zero-Tolerance CI/CD Hallucination Gating.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#060205",
+  "theme_color": "#ff0044",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "64x64 128x128 256x256 512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
