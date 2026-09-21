@@ -1,5 +1,5 @@
 # ⚡ HALLUCIKILLER // 殲滅
-## </> https://www.hallucikiller.vercel.app
+## </> https://hallucikiller.vercel.app/
 ### Level 4 Tactical AI Safety, LLM Red-Teaming & Hallucination Defense Matrix
 [![Python](https://img.shields.io/badge/Python-3.12-blue.svg?style=for-the-badge&logo=python)](https://www.python.org/)
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.110+-009688.svg?style=for-the-badge&logo=fastapi)](https://fastapi.tiangolo.com/)
